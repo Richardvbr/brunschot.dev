@@ -1,12 +1,20 @@
 import Link from 'next/link';
-import type { ConnectLinkProps } from '../connect-links';
+import cn from 'clsx';
+import { LinkProps } from '../connect-links';
 
-const ConnectLink = ({ href, label, icon }: ConnectLinkProps) => {
+interface ConnectLinkProps extends LinkProps {
+  filled?: boolean;
+}
+
+const ConnectLink = ({ href, label, icon, filled }: ConnectLinkProps) => {
   return (
     <li className='transition-opacity text-primary' key={label}>
       <Link
         href={href}
-        className='transition-opacity no-underline w-full rounded-lg p-4 bg-tertiary inline-grid'
+        className={cn(
+          'transition-opacity no-underline block rounded-lg p-4',
+          filled ? 'bg-tertiary' : 'border border-secondary/30'
+        )}
         target='_blank'
       >
         <div className='flex items-center gap-3'>

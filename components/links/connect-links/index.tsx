@@ -1,13 +1,13 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import ConnectLink from '../connect-link';
 
-export type ConnectLinkProps = {
+export interface LinkProps {
   label: string;
   href: string;
   icon: React.ReactNode;
-};
+}
 
-const links: ConnectLinkProps[] = [
+const links: LinkProps[] = [
   {
     label: 'Email',
     href: 'mailto:richardvanbrunschot@gmail.com',
@@ -42,7 +42,13 @@ const ConnectLinks = () => {
       style={{ '--index': 2 } as React.CSSProperties}
     >
       {links.map(({ label, href, icon }) => (
-        <ConnectLink key={href} label={label} href={href} icon={icon} />
+        <ConnectLink
+          key={href}
+          label={label}
+          href={href}
+          icon={icon}
+          filled={true}
+        />
       ))}
     </ul>
   );

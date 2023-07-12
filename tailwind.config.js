@@ -8,12 +8,14 @@ module.exports = {
     extend: {
       colors: {
         primary: '#101010',
+        secondary: '#a0a0a0',
         tertiary: '#232323',
         brand: '#6166dc',
       },
       textColor: {
         primary: '#ededed',
         secondary: '#a0a0a0',
+        brand: '#6166dc',
       },
       keyframes: {
         in: {
