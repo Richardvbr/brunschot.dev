@@ -38,7 +38,7 @@ const workplaces: WorkplaceProps[] = [
 const Experience = () => {
   return (
     <Section key='experience' heading='Experience'>
-      <div className='flex flex-col gap-5 w-full'>
+      <div className='flex flex-col w-full'>
         <p>
           {getYearsFrom(2021)}+ years of professional development experience.
         </p>

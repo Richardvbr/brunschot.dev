@@ -4,7 +4,7 @@ import { WorkplaceProps } from '@/components/about/experience';
 
 const Workplaces = ({ workplaces }: { workplaces: WorkplaceProps[] }) => {
   return (
-    <ul className='flex flex-col gap-8 animated-list mt-4 lg:mt-6'>
+    <ul className='flex flex-col animated-list mt-6 lg:mt-10 gap-4'>
       {workplaces.map(
         ({ title, company, imageSrc, time, link, description }) => (
           <Workplace
