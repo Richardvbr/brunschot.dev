@@ -9,9 +9,9 @@ import Section from '../shared/section';
 const About = () => {
   return (
     <div className='pt-10 lg:pt-20'>
-      <h1 className='mb-20 lg:mb-36 animate-in'>About me</h1>
+      <h1 className='mb-10 lg:mb-20 animate-in'>About me</h1>
       <div
-        className='animate-in flex flex-col gap-10 lg:gap-20'
+        className='animate-in flex flex-col gap-10 lg:gap-20 pb-10'
         style={{ '--index': 1 } as React.CSSProperties}
       >
         <Background />

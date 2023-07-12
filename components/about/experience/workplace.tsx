@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { WorkplaceProps } from './workplaces';
+import { WorkplaceProps } from '@/components/about/experience';
 import Link from 'next/link';
 
 const Workplace = ({
@@ -8,6 +8,7 @@ const Workplace = ({
   imageSrc,
   time,
   link,
+  description,
 }: WorkplaceProps) => {
   const content = (
     <>
@@ -17,12 +18,12 @@ const Workplace = ({
           alt={company}
           width={48}
           height={48}
-          className='rounded-full'
+          className='rounded-full mb-auto'
         />
         <div className='flex flex-col'>
           <p>{title}</p>
           <p className='text-secondary'>{company}</p>
-          <p className='mt-2 text-secondary text-sm'>Description</p>
+          <p className='mt-1 text-secondary text-sm'>{description}</p>
         </div>
       </div>
       <p className='text-secondary'>{time}</p>
