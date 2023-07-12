@@ -1,3 +1,4 @@
+import cn from 'clsx';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import ConnectLink from '../connect-link';
 
@@ -6,6 +7,11 @@ export interface LinkProps {
   href: string;
   icon: React.ReactNode;
 }
+
+type ConnectLinksProps = {
+  filled: boolean;
+  className?: string;
+};
 
 const links: LinkProps[] = [
   {
@@ -35,11 +41,13 @@ const links: LinkProps[] = [
   },
 ];
 
-const ConnectLinks = () => {
+const ConnectLinks = ({ filled, className }: ConnectLinksProps) => {
   return (
     <ul
-      className='w-full flex flex-col gap-2 lg:gap-3 animate-in mt-8 lg:mt-12 animated-list'
-      style={{ '--index': 2 } as React.CSSProperties}
+      className={cn(
+        'w-full flex flex-col gap-2 lg:gap-3 animated-list',
+        className
+      )}
     >
       {links.map(({ label, href, icon }) => (
         <ConnectLink
@@ -47,7 +55,7 @@ const ConnectLinks = () => {
           label={label}
           href={href}
           icon={icon}
-          filled={true}
+          filled={filled}
         />
       ))}
     </ul>

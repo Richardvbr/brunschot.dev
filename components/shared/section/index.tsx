@@ -11,7 +11,7 @@ const Section = ({ heading, className, children }: SectionProps) => {
     <section
       className={cn('flex flex-col md:flex-row gap-2 md:gap-9', className)}
     >
-      <h2>{heading}</h2>
+      <h2 className='text-secondary shrink-0 w-28'>{heading}</h2>
       {children}
     </section>
   );

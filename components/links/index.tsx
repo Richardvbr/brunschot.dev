@@ -26,7 +26,12 @@ const Links = () => {
           Front-end developer who loves building cool things with code. You can
           connect with me using the links below.
         </p>
-        <ConnectLinks />
+        <div
+          className='animate-in w-full'
+          style={{ '--index': 2 } as React.CSSProperties}
+        >
+          <ConnectLinks filled={true} className='mt-8 lg:mt-12' />
+        </div>
       </div>
     </div>
   );
