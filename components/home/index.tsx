@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Section from '@/components/shared/section';
 import avatar from '@/public//richard.jpg';
 import {
   BsArrowUpRight,
@@ -11,7 +10,7 @@ import {
 
 const Home = () => {
   return (
-    <Section className='pt-10 lg:pt-20'>
+    <div className='pt-10 lg:pt-20'>
       <h1 className='animate-in'>Richard van Brunschot</h1>
       <p
         className='text-secondary animate-in'
@@ -49,10 +48,9 @@ const Home = () => {
         className='mt-8 max-w-lg animate-in'
         style={{ '--index': 2 } as React.CSSProperties}
       >
-        I'm a front-end developer with 2 years of professional experience in
-        developing and delivering high-quality, responsive, and user-friendly
-        web applications using modern technologies. such as React, Next.js,
-        TypeScript, and GraphQL.
+        I&apos;m a front-end developer with 2 years of professional experience
+        in developing and delivering high-quality, responsive, and user-friendly
+        web applications using modern technologies.
       </p>
       <ul
         className='flex flex-col mt-8 md:flex-row gap-2 md:gap-6 text-secondary animated-list animate-in'
@@ -74,7 +72,7 @@ const Home = () => {
           </Link>
         </li>
       </ul>
-    </Section>
+    </div>
   );
 };
 

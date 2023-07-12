@@ -1,13 +1,17 @@
 import cn from 'clsx';
 
 type SectionProps = {
-  children: React.ReactNode;
+  heading: string;
   className?: string;
+  children: React.ReactNode;
 };
 
-const Section = ({ children, className }: SectionProps) => {
+const Section = ({ heading, className, children }: SectionProps) => {
   return (
-    <section className={cn('lg:max-w-[700px] mx-auto px-4 md:px-6', className)}>
+    <section
+      className={cn('flex flex-col md:flex-row gap-2 md:gap-9', className)}
+    >
+      <h2>{heading}</h2>
       {children}
     </section>
   );
