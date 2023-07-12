@@ -31,15 +31,21 @@ const Home = () => {
         />
         <ul className='text-secondary flex flex-col gap-1.5'>
           <li className='flex gap-4 items-center'>
-            <BsBriefcase />
+            <div className='shrink-0'>
+              <BsBriefcase />
+            </div>
             Working at Trifork, Eindhoven
           </li>
           <li className='flex gap-4 items-center'>
-            <ImStack />
+            <div className='shrink-0'>
+              <ImStack />
+            </div>
             React, Next.js, TypeScript, GraphQL
           </li>
           <li className='flex gap-4 items-center'>
-            <CiLocationOn />
+            <div className='shrink-0'>
+              <CiLocationOn />
+            </div>
             Lommel, Belgium
           </li>
         </ul>
