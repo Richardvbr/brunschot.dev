@@ -13,7 +13,22 @@
     }
   }
 
-  .animate-in {
-    animation-delay: calc(var(--index) * 130ms);
+  html {
+    @apply bg-primary;
   }
+
+  h1 {
+    @apply text-3xl tracking-tight font-bold;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    @apply text-primary;
+  }
+}
+
+.animate-in {
+  animation-delay: calc(var(--index) * 130ms);
 }

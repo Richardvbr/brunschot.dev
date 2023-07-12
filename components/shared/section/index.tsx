@@ -1,0 +1,16 @@
+import cn from 'clsx';
+
+type SectionProps = {
+  children: React.ReactNode;
+  className?: string;
+};
+
+const Section = ({ children, className }: SectionProps) => {
+  return (
+    <section className={cn('lg:max-w-[700px] mx-auto px-4 md:px-6', className)}>
+      {children}
+    </section>
+  );
+};
+
+export default Section;

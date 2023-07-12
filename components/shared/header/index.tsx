@@ -16,19 +16,19 @@ const links: LinkProps[] = [
     href: '/projects',
   },
   {
-    label: 'Blog',
-    href: '/blog',
+    label: 'Links',
+    href: '/links',
   },
 ];
 
 const Header: React.FC = () => {
   return (
     <header className='relative md:sticky top-0 main-header bg-primary'>
-      <nav className='px-4 md:px-6 py-6 lg max-w-[700px] mx-auto flex justify-between items-center gap-3 text-secondary'>
+      <nav className='px-4 md:px-6 py-6 lg:max-w-[700px] mx-auto flex justify-between items-center gap-3 text-secondary'>
         <Link href='/' className='text-primary'>
           <Logo />
         </Link>
-        <ul className='hidden md:flex items-center gap-1'>
+        <ul className='flex items-center gap-1'>
           {links.map(({ label, href }) => (
             <li key={href}>
               <a

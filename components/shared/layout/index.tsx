@@ -9,7 +9,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Header />
-      <main className='bg-primary h-screen text-100'>{children}</main>
+      <main className='bg-primary text-100'>{children}</main>
     </>
   );
 };
