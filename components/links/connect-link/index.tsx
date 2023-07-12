@@ -3,7 +3,7 @@ import type { ConnectLinkProps } from '../connect-links';
 
 const ConnectLink = ({ href, label, icon }: ConnectLinkProps) => {
   return (
-    <li className='transition-opacity col-span-1 text-primary' key={label}>
+    <li className='transition-opacity text-primary' key={label}>
       <Link
         href={href}
         className='transition-opacity no-underline w-full rounded-lg p-4 bg-tertiary inline-grid'
