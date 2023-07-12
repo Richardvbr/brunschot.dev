@@ -39,7 +39,7 @@ const ConnectLinks = () => {
   return (
     <ul
       className='w-full flex flex-col gap-2 lg:gap-3 animate-in lg:mt-12 animated-list'
-      style={{ '--index': 3 } as React.CSSProperties}
+      style={{ '--index': 2 } as React.CSSProperties}
     >
       {links.map(({ label, href, icon }) => (
         <ConnectLink key={href} label={label} href={href} icon={icon} />
