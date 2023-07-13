@@ -24,9 +24,9 @@ const Workplace = ({
           <p>{title}</p>
           <p className='text-secondary'>{company}</p>
         </div>
-        <p className='text-secondary ml-auto'>{time}</p>
+        <p className='text-secondary ml-auto text-sm shrink-0'>{time}</p>
       </div>
-      <p className='mt-3 text-secondary text-sm'>{description}</p>
+      <p className='mt-2 text-secondary text-sm'>{description}</p>
     </>
   );
   return (
