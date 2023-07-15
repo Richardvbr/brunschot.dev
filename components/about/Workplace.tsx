@@ -17,25 +17,25 @@ const Workplace = ({
           alt={company}
           width={48}
           height={48}
-          className="rounded-full mb-auto shrink-0"
+          className="mb-auto shrink-0 rounded-full"
         />
         <div>
           <p className="font-medium">{title}</p>
           <p className="text-secondary">{company}</p>
         </div>
         <div className="ml-auto">
-          <p className="text-secondary text-sm shrink-0">{time}</p>
-          <p className="text-secondary text-right text-sm shrink-0">
+          <p className="shrink-0 text-sm text-secondary">{time}</p>
+          <p className="shrink-0 text-right text-sm text-secondary">
             {location}
           </p>
         </div>
       </div>
-      <p className="mt-2 text-secondary text-sm">{description}</p>
+      <p className="mt-2 text-sm text-secondary">{description}</p>
     </>
   );
   return (
     <li className="transition-opacity" key={company}>
-      <div className="w-full no-underline gap-1">{content}</div>
+      <div className="w-full gap-1 no-underline">{content}</div>
     </li>
   );
 };

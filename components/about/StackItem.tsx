@@ -4,11 +4,11 @@ const StackItem = ({ category, items }: StackProps) => {
   return (
     <div>
       <h3 className="mb-2 font-medium">{category}</h3>
-      <div className="flex gap-x-3 gap-y-2 flex-wrap">
+      <div className="flex flex-wrap gap-x-3 gap-y-2">
         {items.map((item) => (
           <p
             key={item}
-            className="text-secondary cursor-default transition-colors md:hover:text-primary md:bg-secondary/10 md:py-1.5 md:px-2 md:rounded-md"
+            className="cursor-default text-secondary transition-colors md:rounded-md md:bg-secondary/10 md:px-2 md:py-1.5 md:hover:text-primary"
           >
             {item}
           </p>

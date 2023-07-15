@@ -16,11 +16,11 @@ const ConnectLink = ({
   center,
 }: ConnectLinkProps) => {
   return (
-    <li className="transition-opacity text-primary" key={label}>
+    <li className="text-primary transition-opacity" key={label}>
       <Link
         href={href}
         className={cn(
-          'transition-opacity max-w-sm no-underline block rounded-lg p-4',
+          'block max-w-sm rounded-lg p-4 no-underline transition-opacity',
           filled ? 'bg-tertiary' : 'border border-secondary/30',
           center && 'mx-auto'
         )}
@@ -29,7 +29,7 @@ const ConnectLink = ({
         <div className="flex items-center gap-3">
           <span className="text-xl">{icon}</span>
           {label}
-          <div className="w-4 h-4 ml-auto">
+          <div className="ml-auto h-4 w-4">
             <BsArrowUpRight />
           </div>
         </div>

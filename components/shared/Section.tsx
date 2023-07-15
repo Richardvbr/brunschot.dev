@@ -9,9 +9,9 @@ type SectionProps = {
 const Section = ({ heading, className, children }: SectionProps) => {
   return (
     <section
-      className={cn('flex flex-col md:flex-row gap-2 md:gap-9', className)}
+      className={cn('flex flex-col gap-2 md:flex-row md:gap-9', className)}
     >
-      <h2 className="text-secondary shrink-0 font-semibold text-lg lg:font-normal lg:text-base md:w-28">
+      <h2 className="shrink-0 text-lg font-semibold text-secondary md:w-28 lg:text-base lg:font-normal">
         {heading}
       </h2>
       {children}

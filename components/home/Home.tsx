@@ -14,13 +14,13 @@ const Home = () => {
     <div className="pt-10 lg:pt-20">
       <h1 className="animate-in">Richard van Brunschot</h1>
       <p
-        className="text-secondary animate-in"
+        className="animate-in text-secondary"
         style={{ '--index': 1 } as React.CSSProperties}
       >
         Front-end Developer
       </p>
       <div
-        className="mt-8 animate-in flex gap-8 items-center"
+        className="mt-8 flex animate-in items-center gap-8"
         style={{ '--index': 1 } as React.CSSProperties}
       >
         <Image
@@ -30,20 +30,20 @@ const Home = () => {
           alt="avatar"
           className="rounded-full bg-secondary"
         />
-        <ul className="text-secondary flex flex-col gap-1.5">
-          <li className="flex gap-4 items-center">
+        <ul className="flex flex-col gap-1.5 text-secondary">
+          <li className="flex items-center gap-4">
             <div className="shrink-0">
               <BsBriefcase />
             </div>
             Working at Trifork, Eindhoven
           </li>
-          <li className="flex gap-4 items-center">
+          <li className="flex items-center gap-4">
             <div className="shrink-0">
               <ImStack />
             </div>
             React, Next.js, TypeScript, GraphQL
           </li>
-          <li className="flex gap-4 items-center">
+          <li className="flex items-center gap-4">
             <div className="shrink-0">
               <CiLocationOn />
             </div>
@@ -61,20 +61,20 @@ const Home = () => {
         technologies.
       </p>
       <ul
-        className="flex flex-col mt-8 md:flex-row gap-2 md:gap-6 text-secondary animated-list animate-in"
+        className="animated-list mt-8 flex animate-in flex-col gap-2 text-secondary md:flex-row md:gap-6"
         style={{ '--index': 2 } as React.CSSProperties}
       >
         <li className="transition-opacity">
           <Link
             href="mailto:richardvanbrunschot@gmail.com"
-            className="flex gap-2 items-center no-underline"
+            className="flex items-center gap-2 no-underline"
           >
             <BsArrowUpRight />
             <span>Email me</span>
           </Link>
         </li>
         <li className="transition-opacity">
-          <Link href="/links" className="flex gap-2 items-center no-underline">
+          <Link href="/links" className="flex items-center gap-2 no-underline">
             <BsArrowUpRight />
             <span>Connect with me</span>
           </Link>

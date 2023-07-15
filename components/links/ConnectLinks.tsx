@@ -36,7 +36,7 @@ const ConnectLinks = ({ filled, center, className }: ConnectLinksProps) => {
   return (
     <ul
       className={cn(
-        'w-full flex flex-col gap-2 lg:gap-3 animated-list',
+        'animated-list flex w-full flex-col gap-2 lg:gap-3',
         className
       )}
     >

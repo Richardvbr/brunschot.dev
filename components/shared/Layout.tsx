@@ -9,7 +9,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Header />
-      <main className="lg:max-w-[850px] mx-auto px-4 md:px-6">{children}</main>
+      <main className="mx-auto px-4 md:px-6 lg:max-w-[850px]">{children}</main>
     </>
   );
 };

@@ -37,11 +37,11 @@ const workplaces: WorkplaceProps[] = [
 const Experience = () => {
   return (
     <Section key="experience" heading="Experience">
-      <div className="flex flex-col w-full">
+      <div className="flex w-full flex-col">
         <p>
           {getYearsFrom(2021)}+ years of professional development experience.
         </p>
-        <ul className="flex flex-col animated-list mt-6 gap-10">
+        <ul className="animated-list mt-6 flex flex-col gap-10">
           {workplaces.map(
             ({ title, company, imageSrc, time, location, description }) => (
               <Workplace

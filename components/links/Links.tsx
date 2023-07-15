@@ -11,7 +11,7 @@ const Links = () => {
           width={95}
           height={95}
           alt="avatar"
-          className="rounded-full bg-secondary animate-in"
+          className="animate-in rounded-full bg-secondary"
         />
         <h1
           className="mt-4 animate-in"
@@ -20,14 +20,14 @@ const Links = () => {
           Richard van Brunschot
         </h1>
         <p
-          className="text-secondary max-w-sm text-center mt-2 animate-in"
+          className="mt-2 max-w-sm animate-in text-center text-secondary"
           style={{ '--index': 1 } as React.CSSProperties}
         >
           Front-end developer who loves building cool things with code. You can
           connect with me using the links below.
         </p>
         <div
-          className="animate-in w-full"
+          className="w-full animate-in"
           style={{ '--index': 2 } as React.CSSProperties}
         >
           <ConnectLinks filled={true} center={true} className="mt-8 lg:mt-12" />
