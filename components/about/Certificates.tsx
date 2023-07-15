@@ -15,7 +15,9 @@ const Certificates = () => {
             <p className="mb-0.5 font-medium">
               Microsoft Certified: AZ-900 Azure Fundamentals
             </p>
-            <BsArrowUpRight />
+            <div className="ml-auto sm:ml-0">
+              <BsArrowUpRight />
+            </div>
           </Link>
           <p className="text-sm text-secondary">Microsoft, February 2023</p>
         </li>
@@ -28,7 +30,9 @@ const Certificates = () => {
             <p className="mb-0.5 font-medium">
               Introduction to Computer Science
             </p>
-            <BsArrowUpRight />
+            <div className="ml-auto sm:ml-0">
+              <BsArrowUpRight />
+            </div>
           </Link>
           <p className="text-sm text-secondary">CS50, December 2019</p>
         </li>
