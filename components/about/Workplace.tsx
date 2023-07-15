@@ -17,17 +17,15 @@ const Workplace = ({
           alt={company}
           width={48}
           height={48}
-          className="mb-auto shrink-0 rounded-full"
+          className="mb-auto rounded-full"
         />
         <div>
           <p className="font-medium">{title}</p>
           <p className="text-secondary">{company}</p>
         </div>
-        <div className="ml-auto">
-          <p className="shrink-0 text-sm text-secondary">{time}</p>
-          <p className="shrink-0 text-right text-sm text-secondary">
-            {location}
-          </p>
+        <div className="ml-auto shrink-0">
+          <p className="text-sm text-secondary">{time}</p>
+          <p className="text-right text-sm text-secondary">{location}</p>
         </div>
       </div>
       <p className="mt-2 text-sm text-secondary">{description}</p>
