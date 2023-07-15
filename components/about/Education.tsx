@@ -8,7 +8,7 @@ const Education = () => {
           B.A. in Computer Animation/VFX at Netherlands Film Academy
         </p>
         <p className="text-sm text-secondary">2015 - 2019</p>
-        <ul className="text-secondary list-disc mt-3 flex flex-col gap-y-2">
+        <ul className="text-secondary list-disc pl-5 md:pl-4 mt-3 flex flex-col gap-y-2">
           <li>
             Specialized in creating high-end 3D models for realtime applications
             such as games and virtual reality
