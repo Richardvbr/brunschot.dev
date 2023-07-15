@@ -5,16 +5,24 @@ import { BsArrowUpRight } from '@/components/shared/Icons';
 
 interface ConnectLinkProps extends LinkProps {
   filled?: boolean;
+  center?: boolean;
 }
 
-const ConnectLink = ({ href, label, icon, filled }: ConnectLinkProps) => {
+const ConnectLink = ({
+  href,
+  label,
+  icon,
+  filled,
+  center,
+}: ConnectLinkProps) => {
   return (
     <li className="transition-opacity text-primary" key={label}>
       <Link
         href={href}
         className={cn(
-          'transition-opacity no-underline block rounded-lg p-4',
-          filled ? 'bg-tertiary' : 'border border-secondary/30'
+          'transition-opacity max-w-sm no-underline block rounded-lg p-4',
+          filled ? 'bg-tertiary' : 'border border-secondary/30',
+          center && 'mx-auto'
         )}
         target="_blank"
       >

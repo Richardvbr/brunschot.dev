@@ -24,7 +24,7 @@ const links: LinkProps[] = [
 const Header: React.FC = () => {
   return (
     <header className="relative md:sticky top-0 main-header bg-primary z-20">
-      <nav className="px-4 py-6 mx-auto flex justify-between items-center gap-3 text-secondary md:px-6 lg:max-w-[700px]">
+      <nav className="px-4 py-6 mx-auto flex justify-between items-center gap-3 text-secondary md:px-6 lg:max-w-[850px]">
         <Link href="/" className="text-primary">
           <Logo />
         </Link>

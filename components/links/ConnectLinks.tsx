@@ -10,6 +10,7 @@ export interface LinkProps {
 
 type ConnectLinksProps = {
   filled: boolean;
+  center?: boolean;
   className?: string;
 };
 
@@ -31,7 +32,7 @@ const links: LinkProps[] = [
   },
 ];
 
-const ConnectLinks = ({ filled, className }: ConnectLinksProps) => {
+const ConnectLinks = ({ filled, center, className }: ConnectLinksProps) => {
   return (
     <ul
       className={cn(
@@ -46,6 +47,7 @@ const ConnectLinks = ({ filled, className }: ConnectLinksProps) => {
           href={href}
           icon={icon}
           filled={filled}
+          center={center}
         />
       ))}
     </ul>

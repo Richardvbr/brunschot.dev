@@ -1,9 +1,9 @@
 import { StaticImageData } from 'next/image';
 import { getYearsFrom } from '@/utils/date';
 import Section from '@/components/shared/Section';
-import Workplaces from '@/components/about/Workplaces';
 import jobsTrackrLogo from '@/public/work/jobstrackr.jpg';
 import triforkLogo from '@/public/work/trifork.png';
+import Workplace from './Workplace';
 
 export type WorkplaceProps = {
   title: string;
@@ -41,7 +41,21 @@ const Experience = () => {
         <p>
           {getYearsFrom(2021)}+ years of professional development experience.
         </p>
-        <Workplaces workplaces={workplaces} />
+        <ul className="flex flex-col animated-list mt-6 gap-10">
+          {workplaces.map(
+            ({ title, company, imageSrc, time, location, description }) => (
+              <Workplace
+                key={title}
+                title={title}
+                company={company}
+                imageSrc={imageSrc}
+                time={time}
+                location={location}
+                description={description}
+              />
+            )
+          )}
+        </ul>
       </div>
     </Section>
   );
