@@ -3,7 +3,7 @@ import { StackProps } from '@/components/about/Stack';
 const StackItem = ({ category, items }: StackProps) => {
   return (
     <div>
-      <h2 className="mb-2">{category}</h2>
+      <h3 className="mb-2 font-medium">{category}</h3>
       <div className="flex gap-x-3 gap-y-2 flex-wrap">
         {items.map((item) => (
           <p

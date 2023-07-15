@@ -20,7 +20,7 @@ const Workplace = ({
           className="rounded-full mb-auto shrink-0"
         />
         <div>
-          <p>{title}</p>
+          <p className="font-medium">{title}</p>
           <p className="text-secondary">{company}</p>
         </div>
         <div className="ml-auto">
