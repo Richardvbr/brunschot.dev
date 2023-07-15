@@ -1,5 +1,5 @@
-import Section from '@/components/shared/Section';
 import Link from 'next/link';
+import Section from '@/components/shared/Section';
 
 const Certificates = () => {
   return (

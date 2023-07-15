@@ -1,5 +1,5 @@
-import Logo from '@/public/logo.svg';
 import Link from 'next/link';
+import Logo from '@/public/logo.svg';
 
 type LinkProps = {
   label: string;

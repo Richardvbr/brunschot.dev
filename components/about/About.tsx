@@ -1,10 +1,10 @@
-import Section from '../shared/Section';
 import Background from './Background';
 import Experience from './Experience';
 import Stack from './Stack';
 import Certificates from './Certificates';
 import Education from './Education';
-import ConnectLinks from '../links/ConnectLinks';
+import Section from '@/components/shared/Section';
+import ConnectLinks from '@/components/links/ConnectLinks';
 
 const About = () => {
   return (

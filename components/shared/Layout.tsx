@@ -1,8 +1,7 @@
-import type { ReactNode } from 'react';
 import Header from './Header';
 
 type LayoutProps = {
-  children: ReactNode;
+  children: React.ReactNode;
 };
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
