@@ -24,15 +24,15 @@ const links: LinkProps[] = [
 const Header: React.FC = () => {
   return (
     <header className="relative md:sticky top-0 main-header bg-primary z-20">
-      <nav className="px-4 md:px-6 md:pr-0 py-6 lg:max-w-[700px] mx-auto flex justify-between items-center gap-3 text-secondary">
+      <nav className="px-4 py-6 mx-auto flex justify-between items-center gap-3 text-secondary md:px-6 lg:max-w-[700px]">
         <Link href="/" className="text-primary">
           <Logo />
         </Link>
-        <ul className="flex items-center gap-1">
+        <ul className="flex items-center gap-8">
           {links.map(({ label, href }) => (
             <li key={href}>
               <a
-                className="px-4 py-2 rounded-lg text-sm hover:text-primary transition-colors"
+                className="rounded-lg text-sm hover:text-primary transition-colors"
                 href={href}
               >
                 {label}
