@@ -1,8 +1,8 @@
 import { NextSeo } from 'next-seo';
-import Links from '@/components/links';
+import Links from '@/components/links/Links';
 
 export default function LinksPage() {
-  const seoTitle = 'Links | Richard van Brunschot';
+  const seoTitle = 'Links | Richard van Brunschot - Front-end Developer';
   const seoDescription = 'Connect with me using the links on this page.';
 
   return (

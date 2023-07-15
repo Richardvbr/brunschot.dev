@@ -6,7 +6,7 @@ import {
   ImStack,
   CiLocationOn,
   BsBriefcase,
-} from '@/components/shared/icons';
+} from '@/components/shared/Icons';
 import { getYearsFrom } from '@/utils/date';
 
 const Home = () => {

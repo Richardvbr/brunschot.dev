@@ -1,5 +1,5 @@
 import { NextSeo } from 'next-seo';
-import Home from '@/components/home';
+import Home from '@/components/home/Home';
 
 export default function HomePage() {
   const seoTitle = 'Richard van Brunschot | Front-end Developer';

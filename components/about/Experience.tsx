@@ -1,16 +1,16 @@
-import Section from '@/components/shared/section';
-import Workplaces from '@/components/about/experience/workplaces';
+import { StaticImageData } from 'next/image';
+import { getYearsFrom } from '@/utils/date';
+import Section from '@/components/shared/Section';
+import Workplaces from '@/components/about/Workplaces';
 import jobsTrackrLogo from '@/public/work/jobstrackr.jpg';
 import triforkLogo from '@/public/work/trifork.png';
-import { getYearsFrom } from '@/utils/date';
-import { StaticImageData } from 'next/image';
 
 export type WorkplaceProps = {
   title: string;
   company: string;
   imageSrc: string | StaticImageData;
   time: string;
-  link: string;
+  location?: string;
   description: string;
 };
 
@@ -20,7 +20,6 @@ const workplaces: WorkplaceProps[] = [
     company: 'JobsTrackr',
     time: '07/2023 - present',
     imageSrc: jobsTrackrLogo,
-    link: 'https://jobstrackr.app/',
     description:
       'Actively working on JobsTrackr in my spare time. JobsTrackr allows users to effortlessly manage and keep track of their active applications in one convenient dashboard.',
   },
@@ -28,8 +27,8 @@ const workplaces: WorkplaceProps[] = [
     title: 'Front-end Developer',
     company: 'Trifork',
     time: '04/2021 - present',
+    location: 'Eindhoven, NL',
     imageSrc: triforkLogo,
-    link: 'https://trifork.com',
     description:
       'Developing modern web applications using React, Next.js, TypeScript, GraphQL.',
   },

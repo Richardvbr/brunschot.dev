@@ -1,6 +1,6 @@
 import cn from 'clsx';
-import { FaGithub, FaLinkedin, MdEmail } from '@/components/shared/icons';
-import ConnectLink from '../connect-link';
+import { FaGithub, FaLinkedin, MdEmail } from '@/components/shared/Icons';
+import ConnectLink from './ConnectLink';
 
 export interface LinkProps {
   label: string;

@@ -1,5 +1,5 @@
-import Section from '@/components/shared/section';
-import StackItem from '@/components/about/stack/stack-item';
+import Section from '@/components/shared/Section';
+import StackItem from '@/components/about/StackItem';
 
 export type StackProps = {
   category: string;

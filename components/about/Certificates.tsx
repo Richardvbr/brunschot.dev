@@ -1,4 +1,4 @@
-import Section from '@/components/shared/section';
+import Section from '@/components/shared/Section';
 
 const Certificates = () => {
   return (

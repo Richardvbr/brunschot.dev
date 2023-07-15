@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import cn from 'clsx';
-import { LinkProps } from '../connect-links';
-import { BsArrowUpRight } from '@/components/shared/icons';
+import { LinkProps } from './ConnectLinks';
+import { BsArrowUpRight } from '@/components/shared/Icons';
 
 interface ConnectLinkProps extends LinkProps {
   filled?: boolean;

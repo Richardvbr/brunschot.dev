@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import { WorkplaceProps } from '@/components/about/experience';
+import { WorkplaceProps } from '@/components/about/Experience';
 
 const Workplace = ({
   title,
   company,
   imageSrc,
   time,
-  link,
+  location,
   description,
 }: WorkplaceProps) => {
   const content = (
@@ -23,7 +23,12 @@ const Workplace = ({
           <p>{title}</p>
           <p className="text-secondary">{company}</p>
         </div>
-        <p className="text-secondary ml-auto text-sm shrink-0">{time}</p>
+        <div className="ml-auto">
+          <p className="text-secondary text-sm shrink-0">{time}</p>
+          <p className="text-secondary text-right text-sm shrink-0">
+            {location}
+          </p>
+        </div>
       </div>
       <p className="mt-2 text-secondary text-sm">{description}</p>
     </>

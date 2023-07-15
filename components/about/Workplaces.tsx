@@ -1,19 +1,18 @@
-import React from 'react';
-import Workplace from './workplace';
-import { WorkplaceProps } from '@/components/about/experience';
+import Workplace from './Workplace';
+import { WorkplaceProps } from '@/components/about/Experience';
 
 const Workplaces = ({ workplaces }: { workplaces: WorkplaceProps[] }) => {
   return (
     <ul className="flex flex-col animated-list mt-6 gap-10">
       {workplaces.map(
-        ({ title, company, imageSrc, time, link, description }) => (
+        ({ title, company, imageSrc, time, location, description }) => (
           <Workplace
             key={title}
             title={title}
             company={company}
             imageSrc={imageSrc}
             time={time}
-            link={link}
+            location={location}
             description={description}
           />
         )

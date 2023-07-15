@@ -1,8 +1,8 @@
 import { NextSeo } from 'next-seo';
-import About from '@/components/about';
+import About from '@/components/about/About';
 
 export default function AboutPage() {
-  const seoTitle = 'About | Richard van Brunschot';
+  const seoTitle = 'About | Richard van Brunschot - Front-end Developer';
   const seoDescription = 'Richard van Brunschot, front-end developer.';
 
   return (

@@ -1,4 +1,4 @@
-import { StackProps } from '@/components/about/stack';
+import { StackProps } from '@/components/about/Stack';
 
 const StackItem = ({ category, items }: StackProps) => {
   return (
@@ -8,7 +8,7 @@ const StackItem = ({ category, items }: StackProps) => {
         {items.map((item) => (
           <p
             key={item}
-            className="text-secondary cursor-default transition-colors lg:hover:text-primary bg-secondary/10 py-1.5 px-2 rounded-lg"
+            className="text-secondary cursor-default transition-colors md:hover:text-primary md:bg-secondary/10 md:py-1.5 md:px-2 md:rounded-md"
           >
             {item}
           </p>
