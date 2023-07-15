@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo';
 import Home from '@/components/home';
 
 export default function HomePage() {
-  const seoTitle = 'Richard van Brunschot';
+  const seoTitle = 'Richard van Brunschot | Front-end Developer';
   const seoDescription = 'Richard van Brunschot, front-end developer.';
 
   return (
@@ -14,7 +14,7 @@ export default function HomePage() {
           title: seoTitle,
           description: seoDescription,
           url: `https://brunschot.dev/`,
-          site_name: 'Richard van Brunschot',
+          site_name: seoTitle,
         }}
         twitter={{
           cardType: 'summary_large_image',

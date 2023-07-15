@@ -35,8 +35,8 @@ const stack: StackProps[] = [
 
 const Stack = () => {
   return (
-    <Section key='stack' heading='Stack'>
-      <ul className='flex flex-col gap-5'>
+    <Section key="stack" heading="Stack">
+      <ul className="flex flex-col gap-6">
         {stack.map(({ category, items }) => (
           <StackItem key={category} category={category} items={items} />
         ))}
