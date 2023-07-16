@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import cn from 'clsx';
 import Logo from '@/public/logo.svg';
 
 type LinkProps = {
@@ -22,6 +24,8 @@ const links: LinkProps[] = [
 ];
 
 const Header: React.FC = () => {
+  const { pathname } = useRouter();
+
   return (
     <header className="main-header relative top-0 z-20 bg-primary md:sticky">
       <nav className="mx-auto flex items-center justify-between gap-3 px-4 py-6 text-secondary md:px-6 lg:max-w-[850px]">
@@ -32,7 +36,10 @@ const Header: React.FC = () => {
           {links.map(({ label, href }) => (
             <li key={href}>
               <a
-                className="rounded-lg text-sm transition-colors hover:text-primary"
+                className={cn(
+                  'rounded-lg text-sm transition-colors hover:text-primary',
+                  href === pathname && 'text-primary'
+                )}
                 href={href}
               >
                 {label}
