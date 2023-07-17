@@ -1,8 +1,8 @@
 import { StaticImageData } from 'next/image';
 import { getYearsFrom } from '@/utils/date';
 import Section from '@/components/shared/Section';
-import jobsTrackrLogo from '@/public/work/jobstrackr.jpg';
-import triforkLogo from '@/public/work/trifork.png';
+import jobsTrackrLogo from '@/public/images/jobstrackr.jpg';
+import triforkLogo from '@/public/images/trifork.png';
 import Workplace from './Workplace';
 
 export type WorkplaceProps = {

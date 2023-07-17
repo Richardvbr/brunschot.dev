@@ -47,7 +47,6 @@ const Home = () => {
             <div className="shrink-0">
               <CiLocationOn />
             </div>
-            Lommel, Belgium
           </li>
         </ul>
       </div>

@@ -13,10 +13,10 @@ const links: LinkProps[] = [
     label: 'About',
     href: '/about',
   },
-  {
-    label: 'Projects',
-    href: '/projects',
-  },
+  // {
+  //   label: 'Projects',
+  //   href: '/projects',
+  // },
   {
     label: 'Links',
     href: '/links',
