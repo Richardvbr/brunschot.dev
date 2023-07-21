@@ -35,18 +35,19 @@ const Home = () => {
             <div className="shrink-0">
               <BsBriefcase />
             </div>
-            Working at Trifork, Eindhoven
+            <p>Working at Trifork, Eindhoven</p>
           </li>
           <li className="flex items-center gap-4">
             <div className="shrink-0">
               <ImStack />
             </div>
-            React, Next.js, TypeScript, GraphQL
+            <p>React, Next.js, TypeScript, GraphQL</p>
           </li>
           <li className="flex items-center gap-4">
             <div className="shrink-0">
               <CiLocationOn />
             </div>
+            <p>Lommel, Belgium</p>
           </li>
         </ul>
       </div>
