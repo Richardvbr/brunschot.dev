@@ -2,21 +2,13 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import cn from 'clsx';
 import Logo from '@/public/logo.svg';
-
-type LinkProps = {
-  label: string;
-  href: string;
-};
+import { LinkProps } from '@/types';
 
 const links: LinkProps[] = [
   {
     label: 'About',
     href: '/about',
   },
-  // {
-  //   label: 'Projects',
-  //   href: '/projects',
-  // },
   {
     label: 'Links',
     href: '/links',

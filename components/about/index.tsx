@@ -20,7 +20,7 @@ const About = () => {
         <Certificates />
         <Education />
         <Section key="connect" heading="Connect">
-          <ConnectLinks filled={false} />
+          <ConnectLinks filled={false} center={false} />
         </Section>
       </div>
     </div>

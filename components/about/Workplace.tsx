@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { WorkplaceProps } from '@/components/about/Experience';
+import { WorkplaceProps } from '@/types';
 
 const Workplace = ({
   title,

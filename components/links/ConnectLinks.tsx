@@ -1,18 +1,7 @@
 import cn from 'clsx';
 import { FaGithub, FaLinkedin, MdEmail } from '@/components/shared/Icons';
 import ConnectLink from './ConnectLink';
-
-export interface LinkProps {
-  label: string;
-  href: string;
-  icon: React.ReactNode;
-}
-
-type ConnectLinksProps = {
-  filled: boolean;
-  center?: boolean;
-  className?: string;
-};
+import { ConnectLinksProps, LinkProps } from '@/types';
 
 const links: LinkProps[] = [
   {

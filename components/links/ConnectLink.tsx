@@ -1,12 +1,7 @@
 import Link from 'next/link';
 import cn from 'clsx';
-import type { LinkProps } from './ConnectLinks';
 import { BsArrowUpRight } from '@/components/shared/Icons';
-
-interface ConnectLinkProps extends LinkProps {
-  filled?: boolean;
-  center?: boolean;
-}
+import { ConnectLinkProps } from '@/types';
 
 const ConnectLink = ({
   href,

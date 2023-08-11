@@ -1,10 +1,5 @@
 import cn from 'clsx';
-
-type SectionProps = {
-  heading: string;
-  className?: string;
-  children: React.ReactNode;
-};
+import { SectionProps } from '@/types';
 
 const Section = ({ heading, className, children }: SectionProps) => {
   return (

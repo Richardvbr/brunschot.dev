@@ -30,7 +30,7 @@ const Links = () => {
           className="w-full animate-in"
           style={{ '--index': 2 } as React.CSSProperties}
         >
-          <ConnectLinks filled={true} center={true} className="mt-8 lg:mt-12" />
+          <ConnectLinks filled center className="mt-8 lg:mt-12" />
         </div>
       </div>
     </div>

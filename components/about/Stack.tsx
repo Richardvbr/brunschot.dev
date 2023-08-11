@@ -1,10 +1,6 @@
 import Section from '@/components/shared/Section';
 import StackItem from '@/components/about/StackItem';
-
-export type StackProps = {
-  category: string;
-  items: string[];
-};
+import { StackProps } from '@/types';
 
 const stack: StackProps[] = [
   {
