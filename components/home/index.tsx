@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+
 import avatar from '@/public/richard.jpg';
 import {
   BsArrowUpRight,

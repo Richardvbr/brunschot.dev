@@ -1,7 +1,8 @@
 import cn from 'clsx';
+
 import { FaGithub, FaLinkedin, MdEmail } from '@/components/shared/Icons';
-import ConnectLink from './ConnectLink';
 import { ConnectLinksProps, LinkProps } from '@/types';
+import ConnectLink from './ConnectLink';
 
 const links: LinkProps[] = [
   {

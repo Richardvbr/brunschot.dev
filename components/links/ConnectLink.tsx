@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import cn from 'clsx';
+
 import { BsArrowUpRight } from '@/components/shared/Icons';
 import { ConnectLinkProps } from '@/types';
 

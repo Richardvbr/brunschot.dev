@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import cn from 'clsx';
+
 import Logo from '@/public/logo.svg';
 import { LinkProps } from '@/types';
 

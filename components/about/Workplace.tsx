@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 import { WorkplaceProps } from '@/types';
 
 const Workplace = ({

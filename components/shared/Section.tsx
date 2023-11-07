@@ -1,4 +1,5 @@
 import cn from 'clsx';
+
 import { SectionProps } from '@/types';
 
 const Section = ({ heading, className, children }: SectionProps) => {
