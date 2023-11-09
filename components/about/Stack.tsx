@@ -9,7 +9,7 @@ const stack: StackProps[] = [
   },
   {
     category: 'Frameworks/libraries',
-    items: ['React', 'Next.js', 'React Native', 'Gatsby', 'Astro', 'visx'],
+    items: ['React', 'Next.js', 'React Native', 'Astro'],
   },
   {
     category: 'Other',
@@ -20,6 +20,8 @@ const stack: StackProps[] = [
       'DatoCMS',
       'Yarn/npm',
       'Supabase',
+      'MSAL',
+      'visx',
       'Scrum',
     ],
   },
