@@ -9,7 +9,7 @@ const workplaces: WorkplaceProps[] = [
   {
     title: 'Creator & Front-end Developer',
     company: 'JobsTrackr',
-    time: '07/2023 - present',
+    time: '11/2023 - present',
     imageSrc: jobsTrackrLogo,
     description:
       'Actively working on JobsTrackr in my spare time. JobsTrackr allows users to effortlessly manage and keep track of their active job applications in one convenient dashboard.',
