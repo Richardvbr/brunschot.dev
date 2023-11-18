@@ -1,4 +1,4 @@
-// import jobsTrackrLogo from '@/public/images/jobstrackr.jpg';
+import jobsTrackrLogo from '@/public/images/jobstrackr.jpg';
 import triforkLogo from '@/public/images/trifork.png';
 import { getYearsFrom } from '@/utils/date';
 import Section from '@/components/shared/Section';
@@ -6,14 +6,14 @@ import Workplace from './Workplace';
 import { WorkplaceProps } from '@/types';
 
 const workplaces: WorkplaceProps[] = [
-  // {
-  //   title: 'Creator & Front-end Developer',
-  //   company: 'JobsTrackr',
-  //   time: '07/2023 - present',
-  //   imageSrc: jobsTrackrLogo,
-  //   description:
-  //     'Actively working on JobsTrackr in my spare time. JobsTrackr allows users to effortlessly manage and keep track of their active job applications in one convenient dashboard.',
-  // },
+  {
+    title: 'Creator & Front-end Developer',
+    company: 'JobsTrackr',
+    time: '07/2023 - present',
+    imageSrc: jobsTrackrLogo,
+    description:
+      'Actively working on JobsTrackr in my spare time. JobsTrackr allows users to effortlessly manage and keep track of their active job applications in one convenient dashboard.',
+  },
   {
     title: 'Front-end Developer',
     company: 'Trifork',
