@@ -56,10 +56,10 @@ const Home = () => {
         className="mt-8 max-w-lg animate-in"
         style={{ '--index': 2 } as React.CSSProperties}
       >
-        I&apos;m a front-end developer with {getYearsFrom(2021)}+ years of
-        professional experience in developing and delivering high-quality,
-        responsive, and user-friendly web applications using modern
-        technologies.
+        I&apos;m a front-end developer with currently {getYearsFrom(2021)}+
+        years of professional experience in developing and delivering
+        high-quality, responsive, and user-friendly web applications using
+        modern technologies.
       </p>
       <ul
         className="animated-list mt-8 flex animate-in flex-col gap-2 text-secondary md:flex-row md:gap-6"
