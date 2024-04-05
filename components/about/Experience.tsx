@@ -1,5 +1,4 @@
 import triforkLogo from '@/public/images/trifork.png';
-import { getYearsFrom } from '@/utils/date';
 import Section from '@/components/shared/Section';
 import Workplace from './Workplace';
 import { WorkplaceProps } from '@/types';
