@@ -20,7 +20,7 @@ const Experience = () => {
   return (
     <Section key="experience" heading="Experience">
       <div className="flex w-full flex-col">
-        <ul className="animated-list mt-6 flex flex-col gap-10">
+        <ul className="animated-list flex flex-col gap-10">
           {workplaces.map(
             ({ title, company, imageSrc, time, location, description }) => (
               <Workplace
