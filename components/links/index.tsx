@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import avatar from '@/public//richard.jpg';
+import avatar from '@/public/richard.jpg';
 import ConnectLinks from './ConnectLinks';
 
 const Links = () => {

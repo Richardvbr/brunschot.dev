@@ -1,5 +1,6 @@
 import Background from './Background';
 import Experience from './Experience';
+import Projects from './Projects';
 import Stack from './Stack';
 import Certificates from './Certificates';
 import Education from './Education';
@@ -16,6 +17,7 @@ const About = () => {
       >
         <Background />
         <Experience />
+        <Projects />
         <Stack />
         <Certificates />
         <Education />

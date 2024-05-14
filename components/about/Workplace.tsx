@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { WorkplaceProps } from '@/types';
+import type { WorkplaceProps } from '@/types';
 
 const Workplace = ({
   title,

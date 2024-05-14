@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import cn from 'clsx';
 
 import Logo from '@/public/logo.svg';
-import { LinkProps } from '@/types';
+import type { LinkProps } from '@/types';
 
 const links: LinkProps[] = [
   {
@@ -16,7 +16,7 @@ const links: LinkProps[] = [
   },
 ];
 
-const Header: React.FC = () => {
+const Header = () => {
   const { pathname } = useRouter();
 
   return (

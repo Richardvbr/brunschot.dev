@@ -1,6 +1,6 @@
 import Section from '@/components/shared/Section';
 import StackItem from '@/components/about/StackItem';
-import { StackProps } from '@/types';
+import type { StackProps } from '@/types';
 
 const stack: StackProps[] = [
   {

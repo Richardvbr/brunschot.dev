@@ -1,4 +1,4 @@
-import { StackProps } from '@/types';
+import type { StackProps } from '@/types';
 
 const StackItem = ({ category, items }: StackProps) => {
   return (

@@ -1,7 +1,7 @@
 import triforkLogo from '@/public/images/trifork.png';
 import Section from '@/components/shared/Section';
 import Workplace from './Workplace';
-import { WorkplaceProps } from '@/types';
+import type { WorkplaceProps } from '@/types';
 
 const workplaces: WorkplaceProps[] = [
   {
