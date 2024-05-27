@@ -18,7 +18,7 @@ const Home = () => {
         className="animate-in text-secondary"
         style={{ '--index': 1 } as React.CSSProperties}
       >
-        Front-end Developer
+        Front-end Engineer
       </p>
       <div
         className="mt-8 flex animate-in items-center gap-8"
@@ -36,7 +36,7 @@ const Home = () => {
             <div className="shrink-0">
               <BsBriefcase />
             </div>
-            <p>Working at Trifork, Eindhoven</p>
+            <p>Front-end Engineer @ Trifork (Eindhoven, NL)</p>
           </li>
           <li className="flex items-center gap-4">
             <div className="shrink-0">
