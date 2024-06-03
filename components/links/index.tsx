@@ -1,19 +1,9 @@
-import Image from 'next/image';
-
-import avatar from '@/public/richard.jpg';
 import ConnectLinks from './ConnectLinks';
 
 const Links = () => {
   return (
     <div className="pt-10 lg:pt-20">
       <div className="flex flex-col items-center">
-        <Image
-          src={avatar}
-          width={95}
-          height={95}
-          alt="avatar"
-          className="animate-in rounded-full bg-secondary"
-        />
         <h1
           className="mt-4 animate-in"
           style={{ '--index': 1 } as React.CSSProperties}
