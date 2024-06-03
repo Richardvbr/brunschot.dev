@@ -1,7 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
-import avatar from '@/public/richard.jpg';
 import {
   BsArrowUpRight,
   ImStack,
@@ -24,13 +22,6 @@ const Home = () => {
         className="mt-8 flex animate-in items-center gap-8"
         style={{ '--index': 1 } as React.CSSProperties}
       >
-        <Image
-          src={avatar}
-          width={95}
-          height={95}
-          alt="avatar"
-          className="rounded-full bg-secondary"
-        />
         <ul className="flex flex-col gap-1.5 text-secondary">
           <li className="flex items-center gap-4">
             <div className="shrink-0">
