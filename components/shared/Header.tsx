@@ -30,7 +30,7 @@ const Header = () => {
             <li key={href}>
               <a
                 className={cn(
-                  'rounded-lg text-sm transition-colors hover:text-primary',
+                  'rounded-lg text-sm transition-colors hover:text-primary text-[15px]',
                   href === pathname && 'text-primary'
                 )}
                 href={href}

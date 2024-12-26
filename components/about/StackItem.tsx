@@ -8,7 +8,7 @@ const StackItem = ({ category, items }: StackProps) => {
         {items.map((item) => (
           <p
             key={item}
-            className="cursor-default text-secondary transition-colors md:rounded-md md:bg-secondary/10 md:px-2 md:py-1.5 md:hover:text-primary"
+            className="cursor-default text-secondary transition-colors md:rounded-md md:bg-secondary/10 md:px-2 md:py-1.5"
           >
             {item}
           </p>

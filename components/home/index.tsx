@@ -62,22 +62,25 @@ const Home = () => {
         web applications using modern technologies.
       </p>
       <ul
-        className="animated-list mt-8 flex animate-in flex-col gap-2 text-secondary md:flex-row md:gap-6"
+        className="mt-8 flex animate-in flex-col gap-2 text-secondary md:flex-row md:gap-6"
         style={{ '--index': 2 } as React.CSSProperties}
       >
         <li className="transition-opacity">
           <Link
-            href="mailto:richardvanbrunschot@gmail.com"
-            className="flex items-center gap-2 no-underline"
+            href="/about"
+            className="flex items-center gap-2 no-underline transition-colors  hover:text-white"
           >
             <BsArrowUpRight />
-            <span>Email me</span>
+            <span>See more</span>
           </Link>
         </li>
         <li className="transition-opacity">
-          <Link href="/links" className="flex items-center gap-2 no-underline">
+          <Link
+            href="/links"
+            className="flex items-center gap-2 no-underline transition-colors hover:text-white"
+          >
             <BsArrowUpRight />
-            <span>Connect with me</span>
+            <span>Connect</span>
           </Link>
         </li>
       </ul>
