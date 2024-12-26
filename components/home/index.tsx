@@ -1,12 +1,14 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
+import avatar from '@/public/images/richard.jpg';
+import { getYearsFrom } from '@/utils/date';
 import {
   BsArrowUpRight,
   ImStack,
   CiLocationOn,
   BsBriefcase,
 } from '@/components/shared/Icons';
-import { getYearsFrom } from '@/utils/date';
 
 const Home = () => {
   return (
@@ -22,6 +24,13 @@ const Home = () => {
         className="mt-8 flex animate-in items-center gap-8"
         style={{ '--index': 1 } as React.CSSProperties}
       >
+        <Image
+          src={avatar}
+          width={100}
+          height={100}
+          alt="avatar"
+          className="rounded-full bg-secondary"
+        />
         <ul className="flex flex-col gap-1.5 text-secondary">
           <li className="flex items-center gap-4">
             <div className="shrink-0">
