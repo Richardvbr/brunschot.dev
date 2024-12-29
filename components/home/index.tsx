@@ -21,16 +21,17 @@ const Home = () => {
         Front-end Engineer
       </p>
       <div
-        className="mt-8 flex animate-in items-center gap-8"
+        className="mt-8 flex h-[100] w-[100] animate-in items-center gap-8"
         style={{ '--index': 1 } as React.CSSProperties}
       >
-        <Image
-          src={avatar}
-          width={100}
-          height={100}
-          alt="avatar"
-          className="rounded-full bg-secondary"
-        />
+        <div className="relative h-[100px] w-[100px] shrink-0">
+          <Image
+            src={avatar}
+            layout="fill"
+            alt="avatar"
+            className="rounded-full bg-secondary"
+          />
+        </div>
         <ul className="flex flex-col gap-1.5 text-secondary">
           <li className="flex items-center gap-4">
             <div className="shrink-0">
@@ -62,7 +63,7 @@ const Home = () => {
         web applications using modern technologies.
       </p>
       <ul
-        className="mt-8 flex animate-in flex-col gap-2 text-secondary md:flex-row md:gap-6"
+        className="mt-8 flex animate-in gap-4 text-secondary md:gap-6"
         style={{ '--index': 2 } as React.CSSProperties}
       >
         <li className="transition-opacity">
